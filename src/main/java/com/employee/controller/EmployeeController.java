@@ -69,8 +69,8 @@ public class EmployeeController {
 
     // Add designation to the database
     @PostMapping("/designation/add")
-    public String addDesignation(@RequestParam("designation") String designatio) {
-    	employeeRepository.updateDesignation(designatio);
+    public String addDesignation(@RequestParam("designation") String designation) {
+    	employeeRepository.updateDesignation(designation);
         return "redirect:/designation/new";
     }
 
