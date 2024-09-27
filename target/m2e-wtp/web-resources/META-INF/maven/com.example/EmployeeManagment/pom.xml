@@ -12,7 +12,6 @@
 	<groupId>com.example</groupId>
 	<artifactId>EmployeeManagment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 	<name>EmployeeManagment</name>
 	<description>Demo project for Spring Boot</description>
 	<url />
@@ -43,12 +42,6 @@
 			<version>8.0.33</version>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -75,14 +68,19 @@
 			<version>1.2</version>
 		</dependency>
 	</dependencies>
-
+	
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat-jsp-api</artifactId>
+            <version>1.0</version>
+        </plugin>
+    </plugins>
+    		<finalName>spring-boot-docker</finalName>
 
+</build>
+
+
+	<packaging>war</packaging>
 </project>
