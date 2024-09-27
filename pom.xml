@@ -77,8 +77,6 @@
             <version>1.0</version>
         </plugin>
     </plugins>
-    		<finalName>spring-boot-docker</finalName>
-
 </build>
 
 
